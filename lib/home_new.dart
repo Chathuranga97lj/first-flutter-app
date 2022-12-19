@@ -13,8 +13,11 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.lightGreenAccent,
+    // return Container(
+    //   color: Colors.lightGreenAccent,
+    // );
+    return Scaffold(
+      appBar: AppBar(),
     );
   }
 }
