@@ -17,7 +17,15 @@ class _HomeViewState extends State<HomeView> {
     //   color: Colors.lightGreenAccent,
     // );
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('Home'),
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.deepPurpleAccent,
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
