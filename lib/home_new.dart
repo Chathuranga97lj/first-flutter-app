@@ -34,7 +34,7 @@ class _HomeViewState extends State<HomeView> {
         //   child: Center(child: Text(number.toString())),
         // )
         body: Center(
-          child: MyComponent(),
+          child: Row(children: [MyComponent(), MyComponent(), MyComponent()]),
         ));
   }
 }
