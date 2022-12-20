@@ -34,10 +34,15 @@ class _HomeViewState extends State<HomeView> {
         //   child: Center(child: Text(number.toString())),
         // )
         body: Center(
-          child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-            MyComponent(),
-            MyComponent(),
-          ]),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                MyComponent(),
+                CircleAvatar(
+                  radius: 30,
+                ),
+              ]),
         ));
   }
 }
