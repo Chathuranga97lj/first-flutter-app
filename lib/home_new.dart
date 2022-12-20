@@ -11,6 +11,8 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
+  int number = 0;
+
   @override
   Widget build(BuildContext context) {
     // return Container(
@@ -18,16 +20,30 @@ class _HomeViewState extends State<HomeView> {
     // );
     return Scaffold(
         appBar: AppBar(
-          title: Text('Home'),
+          title: Center(child: Text('Home')),
           backgroundColor: Colors.deepPurpleAccent,
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            setState(() {
+              number += 1;
+            }); // run build function again
+          },
           backgroundColor: Colors.deepPurpleAccent,
           child: Icon(Icons.add),
         ),
-        body: Container(
-          child: Text('Sample Text'),
+        // body: Container(
+        //   child: Center(child: Text(number.toString())),
+        // )
+        body: Center(
+          child: Container(
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+              color: Colors.blueAccent,
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+            ),
+          ),
         ));
   }
 }
