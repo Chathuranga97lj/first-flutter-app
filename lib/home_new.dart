@@ -34,7 +34,10 @@ class _HomeViewState extends State<HomeView> {
         //   child: Center(child: Text(number.toString())),
         // )
         body: Center(
-          child: Row(children: [MyComponent(), MyComponent(), MyComponent()]),
+          child: Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+            MyComponent(),
+            MyComponent(),
+          ]),
         ));
   }
 }
